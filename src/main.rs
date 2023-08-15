@@ -16,6 +16,7 @@ use uefi::Handle;
 use uefi::Status;
 use uefi_services::print;
 use uefi_services::println;
+mod password_reader;
 
 #[entry]
 fn main(_image_handle: Handle, mut system_table: SystemTable<Boot>) -> Status
